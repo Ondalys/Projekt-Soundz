@@ -14,6 +14,9 @@ public class MainActivity extends Activity
 		setContentView(R.layout.activity_main);
 		this.pb=new playback();
 	}
+	public void play(){
+		this.pb.play();
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu)
