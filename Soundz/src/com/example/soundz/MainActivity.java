@@ -6,14 +6,13 @@ import android.view.Menu;
 
 public class MainActivity extends Activity
 {
-
+	private playback pb;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		playback pb=new playback();
-		pb.play();
+		this.pb=new playback();
 	}
 
 	@Override

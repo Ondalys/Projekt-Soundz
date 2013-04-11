@@ -4,6 +4,7 @@ package com.example.soundz;
 import java.io.IOException;
 
 import android.media.MediaPlayer;
+import android.os.Environment;
 
 public class playback {
 	private MediaPlayer mp;	
@@ -11,7 +12,7 @@ public class playback {
 	public playback(){
 		this.mp=new MediaPlayer();		
 		try {
-			mp.setDataSource("CampainMusic09.mp3");
+			mp.setDataSource(Environment.getExternalStorageDirectory().getPath()+"01 - introduction & main titles.mp3");// /sdcard/CampainMusic09.mp3
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
