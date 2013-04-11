@@ -1,4 +1,6 @@
+import android.annotation.TargetApi;
 import android.media.MediaMetadataRetriever;
+import android.os.Build;
 
 
 // Writen my Theo and also siversgay some. plz dounut steal.
