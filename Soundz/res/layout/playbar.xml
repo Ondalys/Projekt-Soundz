@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:src="@android:drawable/btn_star" />
+        android:src="@drawable/ic_launcher" />
     
     <View
         android:layout_width="0dp"
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:src="@android:drawable/ic_media_previous" />
+        android:src="@drawable/prev" />
      
      <View
         android:layout_width="0dp"
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:src="@android:drawable/ic_media_next" />
+        android:src="@drawable/next" />
      
      <View
         android:layout_width="0dp"
@@ -66,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:src="@android:drawable/ic_menu_sort_by_size" />
+        android:src="@drawable/queue" />
      
      <View
         android:layout_width="0dp"

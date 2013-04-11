@@ -29,9 +29,9 @@ public class MainActivity extends Activity
 	{
 	    switch(item.getItemId())
 	    {
-	    	case R.id.action_settings:
+	    	case R.id.settings:
 		    	Fragment fragment = new Fragment();
-		    	setContentView(R.layout.activity_settings);
+		    	setContentView(R.layout.settings);
 		    	if(findViewById(R.id.linearLayout2) != null) {
 		            fragment.setArguments(getIntent().getExtras());
 		            FragmentTransaction transaction = getFragmentManager().beginTransaction();
