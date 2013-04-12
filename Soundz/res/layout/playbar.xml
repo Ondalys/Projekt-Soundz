@@ -15,7 +15,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_launcher"
+    	android:onClick="onHomeButtonPressed" />
     
     <View
         android:layout_width="0dp"
@@ -27,7 +28,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:src="@drawable/prev" />
+        android:src="@drawable/prev"
+    	android:onClick="onPreviousButtonPressed" />
      
      <View
         android:layout_width="0dp"
@@ -41,6 +43,7 @@
 		android:background="@layout/check"
 		android:focusable="false"
 		android:focusableInTouchMode="false"
+		android:onClick="onPlayButtonPressed"
 		android:textOff=""
 		android:textOn="" />
      
@@ -54,7 +57,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:src="@drawable/next" />
+        android:src="@drawable/next" 
+    	android:onClick="onNextButtonPressed"/>
      
      <View
         android:layout_width="0dp"
@@ -66,7 +70,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:src="@drawable/queue" />
+        android:src="@drawable/queue"
+    	android:onClick="onQueueButtonPressed" />
      
      <View
         android:layout_width="0dp"
