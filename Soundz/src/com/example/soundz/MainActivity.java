@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,6 +16,8 @@ import android.widget.ToggleButton;
 
 public class MainActivity extends Activity /*implements PlaybarListener*/
 {
+	
+	private Playback playback;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -53,6 +56,8 @@ public class MainActivity extends Activity /*implements PlaybarListener*/
             // Add the fragment to the 'fragment_container' FrameLayout
             getFragmentManager().beginTransaction()
                     .add(R.id.fragment_container2, infoFragment).commit();
+            
+            playback = new Playback();
         }
 	}
 
@@ -89,42 +94,44 @@ public class MainActivity extends Activity /*implements PlaybarListener*/
 	}
 
 	
+	
+	/*
+	 * Below methods are called when the buttons on the Playbar are pressed
+	 */
+	
 	public void onHomeButtonPressed(View view) {
-		// TODO Auto-generated method stub
-		doTest("home");
+				
 	}
 
 	
 	public void onQueueButtonPressed(View view) {
-		// TODO Auto-generated method stub
-		doTest("queue");
+				
 	}
 
 	
 	public void onPreviousButtonPressed(View view) {
-		// TODO Auto-generated method stub
-		doTest("previous");
+			playback.prev();
 	}
 
 	
 	public void onNextButtonPressed(View view) {
-		// TODO Auto-generated method stub
-		doTest("next");
+			playback.next();
 	}
 
 	
 	public void onPlayButtonPressed(View view) {
-		// TODO Auto-generated method stub
 		boolean state = ((ToggleButton) view).isChecked();
 		if(state){
-			doTest("play");
+			playback.play();
 		}
 		else{
-			doTest("pause");
+			playback.pause();
 		}
 	}
 	
 	
+	
+	/*
 	private void doTest(String s){
 		
 		Test t = new Test();
@@ -142,5 +149,5 @@ public class MainActivity extends Activity /*implements PlaybarListener*/
 		// Commit the transaction
 		transaction.commit();
 		
-	}
+	}*/
 }
