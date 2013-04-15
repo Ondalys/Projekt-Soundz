@@ -28,10 +28,6 @@ public class MainActivity extends Activity /*implements PlaybarListener*/
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayShowTitleEnabled(false);
 		
-		Track[] tracks = new Track[10];
-	    ListView tracksLV = (ListView)findViewById(R.id.queue);
-	    tracksLV.setAdapter(new TrackArrayAdapter(this, tracks));
-		
 		// Check that the activity is using the layout version with
         // the fragment_container FrameLayout
         if (findViewById(R.id.fragment_container1) != null) {
