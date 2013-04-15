@@ -209,7 +209,7 @@ public class Playback{
 		
 		// REMOVE LATER ON
 		track = (track -1) % 4;
-				currentTrackPath = tracks[track];		
+		currentTrackPath = tracks[track];		
 		
 		/* 		MOUNT AREA
 		 * 

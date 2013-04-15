@@ -3,6 +3,7 @@ package com.example.soundz;
 
 
 import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
@@ -23,7 +24,12 @@ public class MainActivity extends Activity /*implements PlaybarListener*/
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		ActionBar actionBar = getActionBar();
+		actionBar.setDisplayShowTitleEnabled(false);
 		
+		Track[] tracks = new Track[];
+	    employeeLV = (ListView)findViewById(R.id.employee_list);
+	    employeeLV.setAdapter(new TrackArrayAdapter(this, tracks);
 		
 		// Check that the activity is using the layout version with
         // the fragment_container FrameLayout
@@ -37,13 +43,13 @@ public class MainActivity extends Activity /*implements PlaybarListener*/
             }
 
             // Create an instance of ExampleFragment
-            Start startFragment = new Start();
+            Queue startFragment = new Queue();
             
             // In case this activity was started with special instructions from an Intent,
             // pass the Intent's extras to the fragment as arguments
             startFragment.setArguments(getIntent().getExtras());
             
-            // Add the fragment to the 'fragment_container' FrameLayout
+            // Add the fragment to the 'fragment_container1' FrameLayout
             getFragmentManager().beginTransaction()
                     .add(R.id.fragment_container1, startFragment).commit();
             
@@ -53,7 +59,7 @@ public class MainActivity extends Activity /*implements PlaybarListener*/
             // pass the Intent's extras to the fragment as arguments
             infoFragment.setArguments(getIntent().getExtras());
             
-            // Add the fragment to the 'fragment_container' FrameLayout
+            // Add the fragment to the 'fragment_container2' FrameLayout
             getFragmentManager().beginTransaction()
                     .add(R.id.fragment_container2, infoFragment).commit();
             

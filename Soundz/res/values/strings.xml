@@ -7,6 +7,26 @@
     <string name="option1">Option 1</string>
     <string name="option2">Option 2</string>
     <string name="option3">Option 3</string>
-    <string name="start">What the fuck did you just fucking say about me, you little bitch?</string>
+    <string name="playlists">Playlists</string>
+    <string name="browse">Browse</string>
+    <string name="search">Search</string>
+    
+    
+    <string-array name="queueList">
+        <item>Shuttle Badminton</item>
+        <item>Tennis</item>
+        <item>FootBall</item>
+        <item>Basket Ball</item>
+        <item>Table Tennis</item>
+        <item>Chess</item>
+        <item>Hockey</item>
+        <item>Shuttle Badminton</item>
+        <item>Tennis</item>
+        <item>FootBall</item>
+        <item>Basket Ball</item>
+        <item>Table Tennis</item>
+        <item>Chess</item>
+        <item>Hockey</item>
+    </string-array>
 
 </resources>

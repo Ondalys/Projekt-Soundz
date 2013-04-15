@@ -9,13 +9,15 @@
 	    android:layout_height="1.5dp"
 	    android:background="#33b5e5" />
 
-    <TextView
+    <Button
     	android:id="@+id/info"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/info"
+        android:background="@android:color/black"
+        android:onClick="onInfoPressed"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     
     <View

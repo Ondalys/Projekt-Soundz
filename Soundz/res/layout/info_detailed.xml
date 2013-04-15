@@ -3,6 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1.5dp"
+	    android:background="#33b5e5" />
 
     <TextView
     	android:id="@+id/info_detailed"
@@ -11,6 +16,11 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/info"
-        android:textAppearance="?android:attr/textAppearanceMedium" />   
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1.5dp"
+	    android:background="#33b5e5" />
 
 </LinearLayout>

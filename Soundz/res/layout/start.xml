@@ -5,9 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-    <TextView 
+    <Button 
         android:layout_width="wrap_content"
     	android:layout_height="wrap_content"
-    	android:text="@string/start" />
+    	android:text="@string/playlists" />
+    
+    <Button 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/browse" />
 
 </LinearLayout>
