@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -27,9 +28,9 @@ public class MainActivity extends Activity /*implements PlaybarListener*/
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayShowTitleEnabled(false);
 		
-		Track[] tracks = new Track[];
-	    employeeLV = (ListView)findViewById(R.id.employee_list);
-	    employeeLV.setAdapter(new TrackArrayAdapter(this, tracks);
+		Track[] tracks = new Track[10];
+	    ListView tracksLV = (ListView)findViewById(R.id.queue);
+	    tracksLV.setAdapter(new TrackArrayAdapter(this, tracks));
 		
 		// Check that the activity is using the layout version with
         // the fragment_container FrameLayout

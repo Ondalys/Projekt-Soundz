@@ -10,23 +10,5 @@
     <string name="playlists">Playlists</string>
     <string name="browse">Browse</string>
     <string name="search">Search</string>
-    
-    
-    <string-array name="queueList">
-        <item>Shuttle Badminton</item>
-        <item>Tennis</item>
-        <item>FootBall</item>
-        <item>Basket Ball</item>
-        <item>Table Tennis</item>
-        <item>Chess</item>
-        <item>Hockey</item>
-        <item>Shuttle Badminton</item>
-        <item>Tennis</item>
-        <item>FootBall</item>
-        <item>Basket Ball</item>
-        <item>Table Tennis</item>
-        <item>Chess</item>
-        <item>Hockey</item>
-    </string-array>
 
 </resources>
