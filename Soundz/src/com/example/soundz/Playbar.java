@@ -49,26 +49,5 @@ public class Playbar extends Fragment
             throw new ClassCastException(activity.toString() + " must implement PlaybarListener");
         }*/
     }
-	/*
-	public void onHomeButtonPressed(View view) {
-		mCallback.onHomeButtonPressed();
-	}
-
-	public void onQueueButtonPressed(View view) {
-		mCallback.onQueueButtonPressed();
-	}
-
-	public void onPreviousButtonPressed(View view) {
-		mCallback.onPreviousButtonPressed();
-	}
-
-	public void onNextButtonPressed(View view) {
-		mCallback.onNextButtonPressed();
-	}
-
-	public void onPlayButtonPressed(View view) {
-		boolean state = ((ToggleButton) view).isChecked();
-		mCallback.onPlayButtonPressed(state);
-	}*/
 	
 }
