@@ -8,9 +8,6 @@
 package com.example.soundz;
 
 public final class R {
-    public static final class array {
-        public static final int queueList=0x7f070000;
-    }
     public static final class attr {
     }
     public static final class color {
@@ -35,47 +32,59 @@ public final class R {
         public static final int queue=0x7f020005;
         public static final int queue_item_color=0x7f020006;
         public static final int queue_text_color=0x7f020007;
-        public static final int settings=0x7f020008;
+        public static final int repeat_icon_off=0x7f020008;
+        public static final int repeat_icon_on=0x7f020009;
+        public static final int settings=0x7f02000a;
+        public static final int shuffle_icon_off=0x7f02000b;
+        public static final int shuffle_icon_on=0x7f02000c;
     }
     public static final class id {
-        public static final int albumart=0x7f0a0005;
-        public static final int checkBox1=0x7f0a000c;
-        public static final int checkBox2=0x7f0a000f;
-        public static final int checkBox3=0x7f0a0012;
-        public static final int fragment_container1=0x7f0a0000;
-        public static final int fragment_container2=0x7f0a0001;
-        public static final int info=0x7f0a0003;
-        public static final int info_detailed=0x7f0a0004;
-        public static final int next=0x7f0a0008;
-        public static final int playbarfragment=0x7f0a0002;
-        public static final int previous=0x7f0a0006;
-        public static final int queue=0x7f0a0009;
-        public static final int search=0x7f0a0015;
-        public static final int seekBar1=0x7f0a0014;
-        public static final int settings=0x7f0a0016;
-        public static final int tableRow1=0x7f0a000a;
-        public static final int tableRow2=0x7f0a000d;
-        public static final int tableRow3=0x7f0a0010;
-        public static final int textView1=0x7f0a000b;
-        public static final int textView2=0x7f0a000e;
-        public static final int textView3=0x7f0a0011;
-        public static final int text_test=0x7f0a0013;
-        public static final int toggle=0x7f0a0007;
+        public static final int QueueList=0x7f090008;
+        public static final int albumart=0x7f090009;
+        public static final int checkBox1=0x7f090010;
+        public static final int checkBox2=0x7f090013;
+        public static final int checkBox3=0x7f090016;
+        public static final int fragment_container1=0x7f090000;
+        public static final int fragment_container2=0x7f090001;
+        public static final int info=0x7f090003;
+        public static final int info_detailed=0x7f090004;
+        public static final int list_item_row=0x7f090005;
+        public static final int next=0x7f09000c;
+        public static final int playbarfragment=0x7f090002;
+        public static final int previous=0x7f09000a;
+        public static final int queue=0x7f09000d;
+        public static final int search=0x7f090019;
+        public static final int seekBar1=0x7f090018;
+        public static final int settings=0x7f09001a;
+        public static final int tableRow1=0x7f09000e;
+        public static final int tableRow2=0x7f090011;
+        public static final int tableRow3=0x7f090014;
+        public static final int textView1=0x7f09000f;
+        public static final int textView2=0x7f090012;
+        public static final int textView3=0x7f090015;
+        public static final int text_test=0x7f090017;
+        public static final int toggle=0x7f09000b;
+        public static final int toggle_repeat=0x7f090007;
+        public static final int toggle_shuffle=0x7f090006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int check=0x7f030001;
-        public static final int info=0x7f030002;
-        public static final int info_detailed=0x7f030003;
-        public static final int playbar=0x7f030004;
-        public static final int queue=0x7f030005;
-        public static final int settings=0x7f030006;
-        public static final int start=0x7f030007;
-        public static final int test=0x7f030008;
-        public static final int trackbar=0x7f030009;
+        public static final int check_repeat=0x7f030002;
+        public static final int check_shuffle=0x7f030003;
+        public static final int info=0x7f030004;
+        public static final int info_detailed=0x7f030005;
+        public static final int list_item=0x7f030006;
+        public static final int list_queue=0x7f030007;
+        public static final int playbar=0x7f030008;
+        public static final int queue=0x7f030009;
+        public static final int settings=0x7f03000a;
+        public static final int start=0x7f03000b;
+        public static final int test=0x7f03000c;
+        public static final int trackbar=0x7f03000d;
     }
     public static final class menu {
-        public static final int main=0x7f090000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
         public static final int app_name=0x7f060000;
@@ -96,11 +105,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f080002;
+        public static final int AppBaseTheme=0x7f070002;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f080001;
+        public static final int AppTheme=0x7f070001;
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -116,6 +125,6 @@ public final class R {
     
  API 11 theme customizations can go here. 
          */
-        public static final int Theme_MyTheme=0x7f080000;
+        public static final int Theme_MyTheme=0x7f070000;
     }
 }
